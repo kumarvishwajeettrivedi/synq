@@ -1,63 +1,99 @@
-# SYNQ — Collaborative Intelligence, Simplified
+# SYNQ: The Multi-Agent Orchestration Framework
 
-<img src="./preview.png" width="100%" />
+> **Unleash the power of collaborative intelligence.**
 
----
+<br>
+<img src="./preview.png" width="100%" alt="SYNQ Interface Preview" />
+<br>
 
-## 🧠 What is SYNQ?
-
-**SYNQ lets multiple AI agents work together — reasoning, debating, evaluating, and coding as a team — all inside one unified framework.**
-
-I created SYNQ after realizing something simple:
-
-> Every AI model has different strengths.  
-> Some are fast, some reason better, some write cleaner code.  
-> Real projects need *all of these* working together.
-
-So I built a platform where multiple agents can collaborate, challenge each other, catch mistakes, and produce far more reliable results than any single model alone.
-
-SYNQ is just the foundation.  
-I don’t know everything, and I don't claim to — but with this framework, **you can build something far better than what I started.**
+**SYNQ** is an advanced, open-source framework designed to transcend the limitations of single-model AI. By orchestrating a cohesive team of specialized agents—powered by Gemini, Groq, and OpenRouter—SYNQ enables autonomous reasoning, rigorous debate, creative synthesis, and self-correcting software development.
 
 ---
 
-## ✨ Features
+## 🚀 Why SYNQ?
 
-- Multi-agent collaboration  
-- Agent-to-agent reasoning and debate  
-- Verification & evaluation loops  
-- Code generation + self-correction  
-- Extensible Python architecture  
-- Clean CLI-based workflow  
+In the rapidly evolving landscape of Artificial Intelligence, no single model is perfect. Some excel at creative nuance, others at strict logic, and others at high-speed code generation.
+
+ **SYNQ unifies them.**
+
+Instead of relying on a solitary output, SYNQ builds a **collaborative ecosystem** where agents challenge, verify, and refine each other's work. The result? Higher accuracy, deeper reasoning, and production-ready code that standard chat interfaces simply cannot match.
+
+## ⚡ Core Capabilities
+
+### 🧠 1. The Consensus Engine
+*Don't just get an answer—get the Truth.*
+*   **Multi-Model Querying**: Simultaneously polls top-tier models (Gemini 1.5, Llama 3, Mixtral 8x7b).
+*   **Mentor-Level Evaluation**: A specialized "Judge" agent strictly scores each response (0-10) on accuracy, depth, and clarity.
+*   **Synthesis**: Automatically merges the strongest insights into a single, hallucination-free consensus answer.
+
+### ⚔️ 2. Reality-Grade Debate Simulator
+*Simulate complex arguments before they happen.*
+*   **Full Debate Structuring**: Orchestrates "PRO" and "CON" agents in a multi-round format (Opening -> Cross-Exam -> Rebuttal -> Closing).
+*   **Adversarial Reasoning**: Agents are prompted to be professionally aggressive, exposing logical fallacies and weak assumptions.
+*   **Judicial Verdict**: A neutral Judge agent delivers a final, binding verdict based on logical strength and evidence.
+
+### 🎨 3. Universal Creative Studio
+*From abstract concept to polished masterpiece.*
+*   **The Pipeline**:
+    1.  **Master Creator**: Generates high-level concepts, moods, and motifs.
+    2.  **Technical Craftsman**: Structures the concept into concrete forms (chapters, verses, code specs).
+    3.  **Polishing Director**: Refines flow, emotional impact, and aesthetics for a publish-ready result.
+
+### 💻 4. Autonomous Agentic Coding
+*Your 24/7 Software Development Team.*
+*   **Full-Cycle Development**: From architectural analysis to written code.
+*   **Active QA Loop**: A dedicated QA Engineer agent scans files for syntax errors, broken links, and logic bugs, generating fix tickets automatically.
+*   **Runtime Verification**: SYNQ *actually runs your code*. It executes build commands, detects crashes, captures error logs, and **auto-fixes** the code until it runs successfully.
 
 ---
 
-## 🧩 Models Used
+## 🛠️ Installation & Setup
 
-### **1. Groq (FREE tier)**  
-- llama3-8b-8192  
-- llama3-70b-8192  
-- mixtral-8x7b-32768  
-- gemma2-9b-it  
+### Prerequisites
+*   Python 3.8+
+*   API Keys for Gemini (Google), Groq, and OpenRouter.
 
-### **2. Google Gemini (FREE tier)**  
-(Gemini gives free credits monthly)
+### Quick Start
 
-- gemini-1.5-flash  
-- gemini-2.0-flash  
-- gemini-1.0-pro (limited)
+1.  **Clone the Repository**
+    ```bash
+    git clone https://github.com/your-username/synq.git
+    cd synq
+    ```
 
-### **3. OpenRouter Models**
+2.  **Install Dependencies**
+    ```bash
+    pip install requests google-generativeai
+    ```
 
-- qwen/qwen2.5:7b-instruct — fast, sharp reasoning  
-- meta-llama/llama-3.1-8b-instruct — strong free model  
-- mistralai/mistral-7b-instruct — stable & consistent  
+3.  **Configure API Keys**
+    Open `keys.py` and insert your API credentials:
+    ```python
+    gemini_key = "YOUR_GEMINI_KEY"
+    groq_key = "YOUR_GROQ_KEY"
+    openrouter_key = "YOUR_OPENROUTER_KEY"
+    ```
+
+4.  **Launch SYNQ**
+    ```bash
+    python v3-multi-mode.py
+    ```
 
 ---
 
-## 📦 Installation
+## 🤝 Contributing
 
-```bash
-git clone <your-repo-url>
-cd synq
-pip install -r requirements.txt
+We welcome contributions from the community! Whether you're fixing bugs, adding new agent personas, or integrating new LLM providers, your help is appreciated.
+
+### How to Contribute
+1.  **Fork** the repository to your own GitHub account.
+2.  **Clone** your fork to your local machine.
+3.  **Create a Branch** for your feature or fix (`git checkout -b feature/amazing-agent`).
+4.  **Commit** your changes with clear messages.
+5.  **Push** to your fork and open a **Pull Request**.
+
+Please ensure your code follows the existing style and includes comments where necessary.
+
+---
+
+*Built with ❤️ for the future of AI.*
